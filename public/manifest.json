@@ -1,0 +1,24 @@
+{
+  "name": "Hamalatulquran Academy",
+  "short_name": "Hamalatulquran",
+  "description": "Quran Memorization & Tajweed Academy in Preston, Victoria",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F3EF",
+  "theme_color": "#0C5D56",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+
