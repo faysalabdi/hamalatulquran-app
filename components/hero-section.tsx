@@ -131,7 +131,7 @@ export default function HeroSection() {
                                     delay={0.5}
                                     as="p"
                                     className="mx-auto mt-8 max-w-2xl text-balance text-lg">
-                                    Dedicated to teaching the Quran with excellence in Tajweed, memorisation (Hifdh), and understanding. We provide a supportive environment for all levels, fostering a lifelong connection to Allah's words.
+                                    Dedicated to teaching the Quran with excellence in Tajweed, memorisation (Hifdh), and understanding. We provide a supportive environment for men and women of all levels, fostering a lifelong connection to Allah's words.
                                 </TextEffect>
 
                                 <div className="mx-auto mt-8 max-w-3xl">
@@ -210,7 +210,7 @@ export default function HeroSection() {
                                 <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
                                     <Image
                                         className="bg-background aspect-video relative rounded-2xl object-cover"
-                                        src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?q=80&w=2670&auto=format&fit=crop"
+                                        src="/dugsi.JPG"
                                         alt="Quran"
                                         width="2700"
                                         height="1520"
