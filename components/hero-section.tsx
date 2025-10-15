@@ -134,15 +134,26 @@ export default function HeroSection() {
                                     Dedicated to teaching the Quran with excellence in Tajweed, memorisation (Hifdh), and understanding. We provide a supportive environment for all levels, fostering a lifelong connection to Allah's words.
                                 </TextEffect>
 
-                                <TextEffect
-                                    per="line"
-                                    preset="fade-in-blur"
-                                    speedSegment={0.3}
-                                    delay={0.7}
-                                    as="p"
-                                    className="mx-auto mt-6 max-w-2xl text-balance text-base italic text-muted-foreground">
-                                    "The best of you are those who learn and teach the Quran."
-                                </TextEffect>
+                                <div className="mx-auto mt-8 max-w-3xl">
+                                    <TextEffect
+                                        per="line"
+                                        preset="fade-in-blur"
+                                        speedSegment={0.3}
+                                        delay={0.7}
+                                        as="p"
+                                        className="text-xl md:text-2xl font-arabic text-muted-foreground">
+                                        خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ
+                                    </TextEffect>
+                                    <TextEffect
+                                        per="line"
+                                        preset="fade-in-blur"
+                                        speedSegment={0.3}
+                                        delay={0.9}
+                                        as="p"
+                                        className="mt-3 text-base italic text-muted-foreground">
+                                        "The best of you are those who learn the Quran and teach it."
+                                    </TextEffect>
+                                </div>
 
                                 <AnimatedGroup
                                     variants={{
@@ -212,12 +223,17 @@ export default function HeroSection() {
                 <section id="about" className="bg-background pb-16 pt-16 md:pb-32">
                     <div className="mx-auto max-w-5xl px-6">
                         <div className="text-center space-y-6">
-                            <h2 className="text-4xl font-semibold md:text-5xl">Join Us to Learn, Live, and Love the Quran</h2>
+                            <h2 className="text-4xl font-semibold md:text-5xl">Transform Your Relationship with the Quran</h2>
                             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                                Catered to men and women adults trying to reconnect with the Quran. We also accept younger students if they are at a high level.
+                                Catered to men and women adults seeking to reconnect with Allah's words. We also welcome younger students who demonstrate a high level of commitment and ability.
                             </p>
-                            <div className="text-xl md:text-2xl font-arabic mt-8 text-muted-foreground">
-                                خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ
+                            <div className="mt-8 space-y-3">
+                                <div className="text-xl md:text-2xl font-arabic text-muted-foreground">
+                                    وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ
+                                </div>
+                                <p className="text-base italic text-muted-foreground">
+                                    "And We have certainly made the Quran easy for remembrance, so is there any who will remember?" (54:17)
+                                </p>
                             </div>
                         </div>
                     </div>

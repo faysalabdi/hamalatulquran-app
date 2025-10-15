@@ -69,9 +69,14 @@ export default function FooterSection() {
                         <span className="text-muted-foreground text-center text-sm">
                             © {new Date().getFullYear()} Hamalatulquran Academy. All rights reserved.
                         </span>
-                        <span className="text-muted-foreground text-center text-sm italic">
-                            "The best of you are those who learn and teach the Quran."
-                        </span>
+                        <div className="text-center">
+                            <p className="text-sm font-arabic text-muted-foreground">
+                                فَٱذْكُرُونِىٓ أَذْكُرْكُمْ
+                            </p>
+                            <p className="text-xs italic text-muted-foreground mt-1">
+                                "So remember Me; I will remember you" (2:152)
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

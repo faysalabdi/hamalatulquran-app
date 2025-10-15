@@ -40,8 +40,15 @@ export default function ContactSection() {
             <div className="mx-auto max-w-4xl px-8 lg:px-6">
                 <div className="text-center mb-12">
                     <h1 className="text-4xl font-semibold lg:text-5xl">Registration Form</h1>
-                    <p className="mt-4 text-lg">Join us to learn, live, and love the Quran!</p>
-                    <p className="mt-2 text-muted-foreground italic">"The best of you are those who learn and teach the Quran."</p>
+                    <p className="mt-4 text-lg">Begin your journey with the Book of Allah</p>
+                    <div className="mt-4 space-y-2">
+                        <p className="text-lg font-arabic text-muted-foreground">
+                            إِنَّ هَٰذَا ٱلْقُرْءَانَ يَهْدِى لِلَّتِى هِىَ أَقْوَمُ
+                        </p>
+                        <p className="text-sm italic text-muted-foreground">
+                            "Indeed, this Quran guides to that which is most suitable" (17:9)
+                        </p>
+                    </div>
                 </div>
 
                 <Card className="p-8 shadow-md sm:p-12">
