@@ -55,9 +55,43 @@ export default function ContactSection() {
                     <div className="mb-8">
                         <h2 className="text-2xl font-semibold">Hamalatulquran Academy</h2>
                         <p className="mt-4 leading-relaxed">
-                            HAMALATULQURAN is dedicated to teaching the Quran with excellence in Tajweed, memorisation (Hifz), and understanding. 
+                        Hamalatulquran Academy is dedicated to teaching the Quran with excellence in Tajweed, memorisation (Hifz), and understanding. 
                             We provide a supportive environment for all levels, fostering a lifelong connection to Allah&apos;s words.
                         </p>
+                    </div>
+
+                    <div className="mb-8 p-6 border rounded-lg bg-gradient-to-br from-primary/5 to-primary/10 text-center">
+                        <div className="space-y-4">
+                            <h3 className="font-semibold text-lg text-foreground">Investment in Your Quran Journey</h3>
+                            <div className="space-y-2">
+                                <p className="text-4xl font-bold text-primary">$150</p>
+                                <p className="text-sm text-muted-foreground">per month</p>
+                            </div>
+                            <div className="space-y-3 text-sm text-left max-w-md mx-auto">
+                                <p className="font-medium text-foreground">What you&apos;ll receive:</p>
+                                <ul className="space-y-2 text-muted-foreground">
+                                    <li className="flex items-start gap-2">
+                                        <span className="text-primary">•</span>
+                                        <span>2 in-person classes per week (Wed & Sun)</span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <span className="text-primary">•</span>
+                                        <span>6 days of online revision sessions</span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <span className="text-primary">•</span>
+                                        <span>Personalized attention from experienced teachers</span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <span className="text-primary">•</span>
+                                        <span>Structured curriculum for Hifdh & Tajweed</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p className="text-xs text-muted-foreground italic">
+                                Payment details will be provided upon acceptance
+                            </p>
+                        </div>
                     </div>
 
                     <form onSubmit={onSubmit} className="space-y-6">
@@ -168,42 +202,6 @@ export default function ContactSection() {
                                     <SelectItem value="advanced">Advanced</SelectItem>
                                 </SelectContent>
                             </Select>
-                        </div>
-
-                        <div className="mt-8 p-6 border rounded-lg bg-primary/5">
-                            <h3 className="font-semibold text-lg mb-4">Payment Details</h3>
-                            <div className="space-y-3 text-sm">
-                                <div className="grid md:grid-cols-2 gap-4">
-                                    <div>
-                                        <p className="font-semibold">Bank Name:</p>
-                                        <p>Hamalatulquran Institute</p>
-                                    </div>
-                                    <div>
-                                        <p className="font-semibold">BSB:</p>
-                                        <p>083-495</p>
-                                    </div>
-                                    <div>
-                                        <p className="font-semibold">Account Number:</p>
-                                        <p>261740154</p>
-                                    </div>
-                                    <div>
-                                        <p className="font-semibold">Monthly Fee:</p>
-                                        <p className="text-xl font-bold text-primary">$150</p>
-                                    </div>
-                                </div>
-                                <div className="mt-4 space-y-2">
-                                    <p className="font-semibold">Payment Instructions:</p>
-                                    <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                                        <li>Set up a recurring monthly payment of $150 via online banking</li>
-                                        <li>Choose either the 1st or 15th of each month for payment</li>
-                                        <li>Use your Full Name as the payment reference</li>
-                                        <li>Email screenshot/receipt to: hamalatulquraninstitute@gmail.com</li>
-                                    </ul>
-                                    <p className="italic text-xs mt-3">
-                                        <strong>Important:</strong> Timely payments help ensure classes continue without interruption and allow us to stay focused on providing the best Qur&apos;an learning experience for everyone.
-                                    </p>
-                                </div>
-                            </div>
                         </div>
 
                         <Button type="submit" size="lg" className="w-full">
