@@ -51,10 +51,10 @@ export default function ContentSection() {
                     <div className="space-y-6">
                         <h3 className="text-2xl font-semibold">For Both Men & Women</h3>
                         <p className="text-muted-foreground leading-relaxed">
-                            Our academy provides a welcoming and structured learning environment for adults seeking to reconnect with the Quran. With experienced teachers and a focus on revision, you'll develop strong foundations in Tajweed and Hifdh.
+                            Our academy provides a welcoming and structured learning environment for adults seeking to reconnect with the Quran. With experienced teachers and a focus on revision, you&apos;ll develop strong foundations in Tajweed and Hifdh.
                         </p>
                         <p className="text-muted-foreground leading-relaxed">
-                            In addition to our in-person classes, we offer 6 days of online revision sessions to ensure consistent progress and strong retention of what you've memorized.
+                            In addition to our in-person classes, we offer 6 days of online revision sessions to ensure consistent progress and strong retention of what you&apos;ve memorized.
                         </p>
                         <Button
                             asChild

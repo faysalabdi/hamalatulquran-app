@@ -74,7 +74,7 @@ export default function FooterSection() {
                                 فَٱذْكُرُونِىٓ أَذْكُرْكُمْ
                             </p>
                             <p className="text-xs italic text-muted-foreground mt-1">
-                                "So remember Me; I will remember you" (2:152)
+                                &quot;So remember Me; I will remember you&quot; (2:152)
                             </p>
                         </div>
                     </div>

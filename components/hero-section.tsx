@@ -1,6 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react'
 import Link from 'next/link'
-import { ArrowRight, ChevronRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { TextEffect } from '@/components/ui/text-effect'
@@ -131,7 +131,7 @@ export default function HeroSection() {
                                     delay={0.5}
                                     as="p"
                                     className="mx-auto mt-8 max-w-2xl text-balance text-lg">
-                                    Dedicated to teaching the Quran with excellence in Tajweed, memorisation (Hifdh), and understanding. We provide a supportive environment for men and women of all levels, fostering a lifelong connection to Allah's words.
+                                    Dedicated to teaching the Quran with excellence in Tajweed, memorisation (Hifdh), and understanding. We provide a supportive environment for men and women of all levels, fostering a lifelong connection to Allah&apos;s words.
                                 </TextEffect>
 
                                 <div className="mx-auto mt-8 max-w-3xl">
@@ -151,7 +151,7 @@ export default function HeroSection() {
                                         delay={0.9}
                                         as="p"
                                         className="mt-3 text-base italic text-muted-foreground">
-                                        "The best of you are those who learn the Quran and teach it."
+                                        &quot;The best of you are those who learn the Quran and teach it.&quot;
                                     </TextEffect>
                                 </div>
 
@@ -225,14 +225,14 @@ export default function HeroSection() {
                         <div className="text-center space-y-6">
                             <h2 className="text-4xl font-semibold md:text-5xl">Transform Your Relationship with the Quran</h2>
                             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                                Catered to men and women adults seeking to reconnect with Allah's words. We also welcome younger students who demonstrate a high level of commitment and ability.
+                                Catered to men and women seeking to reconnect with Allah&apos;s words. We also welcome younger students who demonstrate a high level of commitment and ability.
                             </p>
                             <div className="mt-8 space-y-3">
                                 <div className="text-xl md:text-2xl font-arabic text-muted-foreground">
                                     وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ
                                 </div>
                                 <p className="text-base italic text-muted-foreground">
-                                    "And We have certainly made the Quran easy for remembrance, so is there any who will remember?" (54:17)
+                                    &quot;And We have certainly made the Quran easy for remembrance, so is there any who will remember?&quot; (54:17)
                                 </p>
                             </div>
                         </div>

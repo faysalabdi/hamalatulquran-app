@@ -46,7 +46,7 @@ export default function ContactSection() {
                             إِنَّ هَٰذَا ٱلْقُرْءَانَ يَهْدِى لِلَّتِى هِىَ أَقْوَمُ
                         </p>
                         <p className="text-sm italic text-muted-foreground">
-                            "Indeed, this Quran guides to that which is most suitable" (17:9)
+                            &quot;Indeed, this Quran guides to that which is most suitable&quot; (17:9)
                         </p>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ export default function ContactSection() {
                         <h2 className="text-2xl font-semibold">Hamalatulquran Academy</h2>
                         <p className="mt-4 leading-relaxed">
                             HAMALATULQURAN is dedicated to teaching the Quran with excellence in Tajweed, memorisation (Hifz), and understanding. 
-                            We provide a supportive environment for all levels, fostering a lifelong connection to Allah's words.
+                            We provide a supportive environment for all levels, fostering a lifelong connection to Allah&apos;s words.
                         </p>
                     </div>
 
@@ -200,7 +200,7 @@ export default function ContactSection() {
                                         <li>Email screenshot/receipt to: hamalatulquraninstitute@gmail.com</li>
                                     </ul>
                                     <p className="italic text-xs mt-3">
-                                        <strong>Important:</strong> Timely payments help ensure classes continue without interruption and allow us to stay focused on providing the best Qur'an learning experience for everyone.
+                                        <strong>Important:</strong> Timely payments help ensure classes continue without interruption and allow us to stay focused on providing the best Qur&apos;an learning experience for everyone.
                                     </p>
                                 </div>
                             </div>
