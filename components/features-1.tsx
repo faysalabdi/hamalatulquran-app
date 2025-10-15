@@ -1,64 +1,81 @@
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
-import { Settings2, Sparkles, Zap } from 'lucide-react'
+import { Book, BookOpen, Users, Clock } from 'lucide-react'
 import { ReactNode } from 'react'
 
 export default function Features() {
     return (
-        <section className="bg-zinc-50 py-16 md:py-32 dark:bg-transparent">
-            <div className="@container mx-auto max-w-5xl px-6">
+        <section id="programs" className="bg-zinc-50 py-16 md:py-32 dark:bg-transparent">
+            <div className="@container mx-auto max-w-6xl px-6">
                 <div className="text-center">
-                    <h2 className="text-balance text-4xl font-semibold lg:text-5xl">Built to cover your needs</h2>
-                    <p className="mt-4">Libero sapiente aliquam quibusdam aspernatur, praesentium iusto repellendus.</p>
+                    <h2 className="text-balance text-4xl font-semibold lg:text-5xl">Our Programs</h2>
+                    <p className="mt-4 text-lg">Excellence in Quran education with dedicated teachers and structured programs</p>
                 </div>
-                <div className="@min-4xl:max-w-full @min-4xl:grid-cols-3 mx-auto mt-8 grid max-w-sm gap-6 *:text-center md:mt-16">
+                <div className="@min-4xl:max-w-full @min-4xl:grid-cols-4 mx-auto mt-8 grid max-w-sm gap-6 *:text-center md:mt-16 md:grid-cols-2">
                     <Card className="group shadow-zinc-950/5">
                         <CardHeader className="pb-3">
                             <CardDecorator>
-                                <Zap
+                                <Book
                                     className="size-6"
                                     aria-hidden
                                 />
                             </CardDecorator>
 
-                            <h3 className="mt-6 font-medium">Customizable</h3>
+                            <h3 className="mt-6 font-medium">Hifdh (Memorization)</h3>
                         </CardHeader>
 
                         <CardContent>
-                            <p className="text-sm">Extensive customization options, allowing you to tailor every aspect to meet your specific needs.</p>
+                            <p className="text-sm">Comprehensive memorization program with structured curriculum and regular assessments to help you memorize the Quran effectively.</p>
                         </CardContent>
                     </Card>
 
                     <Card className="group shadow-zinc-950/5">
                         <CardHeader className="pb-3">
                             <CardDecorator>
-                                <Settings2
+                                <Clock
                                     className="size-6"
                                     aria-hidden
                                 />
                             </CardDecorator>
 
-                            <h3 className="mt-6 font-medium">You have full control</h3>
+                            <h3 className="mt-6 font-medium">Daily Revision</h3>
                         </CardHeader>
 
                         <CardContent>
-                            <p className="mt-3 text-sm">From design elements to functionality, you have complete control to create a unique and personalized experience.</p>
+                            <p className="mt-3 text-sm">6 days of online revision with dedicated teachers to maintain strong Hifdh and ensure long-term retention.</p>
                         </CardContent>
                     </Card>
 
                     <Card className="group shadow-zinc-950/5">
                         <CardHeader className="pb-3">
                             <CardDecorator>
-                                <Sparkles
+                                <BookOpen
                                     className="size-6"
                                     aria-hidden
                                 />
                             </CardDecorator>
 
-                            <h3 className="mt-6 font-medium">Powered By AI</h3>
+                            <h3 className="mt-6 font-medium">Tajweed Excellence</h3>
                         </CardHeader>
 
                         <CardContent>
-                            <p className="mt-3 text-sm">Elements to functionality, you have complete control to create a unique experience.</p>
+                            <p className="mt-3 text-sm">Master the art of proper Quranic recitation with our expert teachers. Beginner-friendly approach for all levels.</p>
+                        </CardContent>
+                    </Card>
+
+                    <Card className="group shadow-zinc-950/5">
+                        <CardHeader className="pb-3">
+                            <CardDecorator>
+                                <Users
+                                    className="size-6"
+                                    aria-hidden
+                                />
+                            </CardDecorator>
+
+                            <h3 className="mt-6 font-medium">All Levels Welcome</h3>
+                        </CardHeader>
+
+                        <CardContent>
+                            <p className="mt-3 text-sm">From beginners to advanced students, we provide personalized attention and support for your Quranic journey.</p>
                         </CardContent>
                     </Card>
                 </div>

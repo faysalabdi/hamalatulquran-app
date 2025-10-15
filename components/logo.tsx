@@ -5,10 +5,10 @@ export const Logo = ({ className, uniColor }: { className?: string; uniColor?: b
     return (
         <Image
             src="/logo-transparent.png"
-            alt="Logo"
-            width={120}
-            height={120}
-            className={cn('h-8 w-auto', className)}
+            alt="Hamalatulquran Academy Logo"
+            width={160}
+            height={160}
+            className={cn('h-12 w-auto', className)}
             priority
         />
     )

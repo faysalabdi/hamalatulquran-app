@@ -1,17 +1,16 @@
 'use client'
 import Link from 'next/link'
-import { Logo } from '@/components/logo'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Home } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import React from 'react'
 import { cn } from '@/lib/utils'
 import { ThemeToggleButton } from './ThemeToggleButton'
 
 const menuItems = [
-    { name: 'Features', href: '#link' },
-    { name: 'Solution', href: '#link' },
-    { name: 'Pricing', href: '#link' },
-    { name: 'About', href: '#link' },
+    { name: 'About', href: '#about' },
+    { name: 'Programs', href: '#programs' },
+    { name: 'Schedule', href: '#schedule' },
+    { name: 'Register', href: '#register' },
 ]
 
 export const HeroHeader = () => {
@@ -36,8 +35,9 @@ export const HeroHeader = () => {
                             <Link
                                 href="/"
                                 aria-label="home"
-                                className="flex items-center space-x-2">
-                                <Logo />
+                                className="flex items-center space-x-2 group">
+                                <Home className="size-6 text-foreground group-hover:text-primary transition-colors" />
+                                <span className="font-semibold text-lg">Home</span>
                             </Link>
 
                             <button
@@ -82,8 +82,8 @@ export const HeroHeader = () => {
                                     asChild
                                     size="sm"
                                     className={cn(isScrolled ? 'lg:inline-flex' : 'hidden')}>
-                                    <Link href="#">
-                                        <span>Get Started</span>
+                                    <Link href="#register">
+                                        <span>Register Now</span>
                                     </Link>
                                 </Button>
                                 <ThemeToggleButton />

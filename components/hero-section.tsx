@@ -83,16 +83,47 @@ export default function HeroSection() {
 
                         <div className="mx-auto max-w-7xl px-6">
                             <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
-                                <AnimatedGroup variants={transitionVariants}>
+                                <AnimatedGroup variants={transitionVariants as any}>
+                                    <div className="text-2xl md:text-3xl font-arabic mb-4">
+                                        بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+                                    </div>
                                 </AnimatedGroup>
 
-                                <TextEffect
-                                    preset="fade-in-blur"
-                                    speedSegment={0.3}
-                                    as="h1"
-                                    className="mx-auto mt-8 max-w-4xl text-balance text-5xl max-md:font-semibold md:text-7xl lg:mt-16 xl:text-[5.25rem]">
-                                    Modern Solutions for Customer Engagement
-                                </TextEffect>
+                                <AnimatedGroup
+                                    variants={{
+                                        container: {
+                                            visible: {
+                                                transition: {
+                                                    delayChildren: 0.3,
+                                                },
+                                            },
+                                        },
+                                        item: {
+                                            hidden: {
+                                                opacity: 0,
+                                                y: 20,
+                                            },
+                                            visible: {
+                                                opacity: 1,
+                                                y: 0,
+                                                transition: {
+                                                    type: 'spring',
+                                                    bounce: 0.3,
+                                                    duration: 1.5,
+                                                },
+                                            },
+                                        },
+                                    }}
+                                    className="mx-auto mt-8 lg:mt-16">
+                                    <Image
+                                        src="/logo-transparent.png"
+                                        alt="Hamalatulquran Academy"
+                                        width={600}
+                                        height={600}
+                                        className="mx-auto h-48 md:h-64 lg:h-80 w-auto"
+                                        priority
+                                    />
+                                </AnimatedGroup>
                                 <TextEffect
                                     per="line"
                                     preset="fade-in-blur"
@@ -100,7 +131,17 @@ export default function HeroSection() {
                                     delay={0.5}
                                     as="p"
                                     className="mx-auto mt-8 max-w-2xl text-balance text-lg">
-                                    Highly customizable components for building modern websites and applications that look and feel the way you mean it.
+                                    Dedicated to teaching the Quran with excellence in Tajweed, memorisation (Hifdh), and understanding. We provide a supportive environment for all levels, fostering a lifelong connection to Allah's words.
+                                </TextEffect>
+
+                                <TextEffect
+                                    per="line"
+                                    preset="fade-in-blur"
+                                    speedSegment={0.3}
+                                    delay={0.7}
+                                    as="p"
+                                    className="mx-auto mt-6 max-w-2xl text-balance text-base italic text-muted-foreground">
+                                    "The best of you are those who learn and teach the Quran."
                                 </TextEffect>
 
                                 <AnimatedGroup
@@ -114,7 +155,7 @@ export default function HeroSection() {
                                             },
                                         },
                                         ...transitionVariants,
-                                    }}
+                                    } as any}
                                     className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row">
                                     <div
                                         key={1}
@@ -123,8 +164,8 @@ export default function HeroSection() {
                                             asChild
                                             size="lg"
                                             className="rounded-xl px-5 text-base">
-                                            <Link href="#link">
-                                                <span className="text-nowrap">Start Building</span>
+                                            <Link href="#register">
+                                                <span className="text-nowrap">Register Now</span>
                                             </Link>
                                         </Button>
                                     </div>
@@ -134,8 +175,8 @@ export default function HeroSection() {
                                         size="lg"
                                         variant="ghost"
                                         className="h-10.5 rounded-xl px-5">
-                                        <Link href="#link">
-                                            <span className="text-nowrap">Request a demo</span>
+                                        <Link href="#about">
+                                            <span className="text-nowrap">Learn More</span>
                                         </Link>
                                     </Button>
                                 </AnimatedGroup>
@@ -153,38 +194,31 @@ export default function HeroSection() {
                                     },
                                 },
                                 ...transitionVariants,
-                            }}>
+                            } as any}>
                             <div className="mask-b-from-55% relative -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20">
                                 <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
                                     <Image
-                                        className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block"
-                                        src="/mail2.webp"
-                                        alt="app screen"
+                                        className="bg-background aspect-video relative rounded-2xl object-cover"
+                                        src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?q=80&w=2670&auto=format&fit=crop"
+                                        alt="Quran"
                                         width="2700"
-                                        height="1440"
-                                    />
-                                    <Image
-                                        className="z-2 border-border/25 aspect-15/8 relative rounded-2xl border dark:hidden"
-                                        src="/mail2-light.webp"
-                                        alt="app screen"
-                                        width="2700"
-                                        height="1440"
+                                        height="1520"
                                     />
                                 </div>
                             </div>
                         </AnimatedGroup>
                     </div>
                 </section>
-                <section className="bg-background pb-16 pt-16 md:pb-32">
-                    <div className="group relative m-auto max-w-5xl px-6">
-                        <div className="absolute inset-0 z-10 flex scale-95 items-center justify-center opacity-0 duration-500 group-hover:scale-100 group-hover:opacity-100">
-                            <Link
-                                href="/"
-                                className="block text-sm duration-150 hover:opacity-75">
-                                <span> Meet Our Customers</span>
-
-                                <ChevronRight className="ml-1 inline-block size-3" />
-                            </Link>
+                <section id="about" className="bg-background pb-16 pt-16 md:pb-32">
+                    <div className="mx-auto max-w-5xl px-6">
+                        <div className="text-center space-y-6">
+                            <h2 className="text-4xl font-semibold md:text-5xl">Join Us to Learn, Live, and Love the Quran</h2>
+                            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                                Catered to men and women adults trying to reconnect with the Quran. We also accept younger students if they are at a high level.
+                            </p>
+                            <div className="text-xl md:text-2xl font-arabic mt-8 text-muted-foreground">
+                                خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ
+                            </div>
                         </div>
                     </div>
                 </section>
