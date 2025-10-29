@@ -8,33 +8,7 @@ import { Card } from '@/components/ui/card'
 import { useState } from 'react'
 
 export default function ContactSection() {
-    const [result, setResult] = useState('')
     const [isUnder18, setIsUnder18] = useState(false)
-
-    const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault()
-        setResult('Sending....')
-        const formData = new FormData(event.currentTarget)
-
-        const response = await fetch('https://formspree.io/f/mblpoqkj', {
-            method: 'POST',
-            body: formData,
-            headers: {
-                'Accept': 'application/json'
-            }
-        })
-
-        const data = await response.json()
-
-        if (response.ok) {
-            setResult('Registration submitted successfully! We will be in touch soon.')
-            event.currentTarget.reset()
-            setIsUnder18(false)
-        } else {
-            console.log('Error', data)
-            setResult(data.errors?.map((e: { message: string }) => e.message).join(', ') || 'Submission failed. Please try again.')
-        }
-    }
 
     return (
         <section id="register" className="py-32 bg-zinc-50 dark:bg-transparent">
@@ -95,7 +69,8 @@ export default function ContactSection() {
                         </div>
                     </div>
 
-                    <form onSubmit={onSubmit} className="space-y-6">
+                    <form action="https://formspree.io/f/mblpoqkj" method="POST" className="space-y-6">
+                        <input type="hidden" name="_subject" value="New Hamalatulquran Academy Registration" />
                         <div className="grid md:grid-cols-2 gap-6">
                             <div className="space-y-3">
                                 <Label htmlFor="firstName">First Name <span className="text-red-500">*</span></Label>
@@ -208,12 +183,6 @@ export default function ContactSection() {
                         <Button type="submit" size="lg" className="w-full">
                             Submit Registration
                         </Button>
-
-                        {result && (
-                            <p className={`text-center text-sm ${result.includes('success') ? 'text-green-600' : 'text-red-600'}`}>
-                                {result}
-                            </p>
-                        )}
                     </form>
                 </Card>
             </div>
