@@ -36,8 +36,8 @@ export default function FooterSection() {
                         <div className="space-y-3 text-sm text-muted-foreground">
                             <div className="flex items-start gap-2">
                                 <Mail className="size-4 mt-0.5 flex-shrink-0" />
-                                <a href="mailto:hamalatulquraninstitute@gmail.com" className="hover:text-primary">
-                                    hamalatulquraninstitute@gmail.com
+                                <a href="mailto:hamalatulquran.au@gmail.com" className="hover:text-primary">
+                                    hamalatulquran.au@gmail.com
                                 </a>
                             </div>
                             <div className="flex items-start gap-2">

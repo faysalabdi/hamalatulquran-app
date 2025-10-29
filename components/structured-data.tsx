@@ -18,7 +18,7 @@ export default function StructuredData() {
           "postalCode": "3072",
           "addressCountry": "AU"
         },
-        "email": "hamalatulquraninstitute@gmail.com",
+        "email": "hamalatulquran.au@gmail.com",
         "areaServed": {
           "@type": "City",
           "name": "Melbourne"
@@ -71,7 +71,7 @@ export default function StructuredData() {
           "postalCode": "3072",
           "addressCountry": "AU"
         },
-        "email": "hamalatulquraninstitute@gmail.com",
+        "email": "hamalatulquran.au@gmail.com",
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
