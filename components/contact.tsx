@@ -16,22 +16,23 @@ export default function ContactSection() {
         setResult('Sending....')
         const formData = new FormData(event.currentTarget)
 
-        formData.append('access_key', 'b417beaf-b17f-4298-8c06-efd8e6c1e578')
-
-        const response = await fetch('https://api.web3forms.com/submit', {
+        const response = await fetch('https://formspree.io/f/mblpoqkj', {
             method: 'POST',
             body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
         })
 
         const data = await response.json()
 
-        if (data.success) {
+        if (response.ok) {
             setResult('Registration submitted successfully! We will be in touch soon.')
             event.currentTarget.reset()
             setIsUnder18(false)
         } else {
             console.log('Error', data)
-            setResult(data.message)
+            setResult(data.errors?.map((e: { message: string }) => e.message).join(', ') || 'Submission failed. Please try again.')
         }
     }
 
