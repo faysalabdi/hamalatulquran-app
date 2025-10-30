@@ -9,6 +9,7 @@ import { useState } from 'react'
 
 export default function ContactSection() {
     const [isUnder18, setIsUnder18] = useState(false)
+    const [age, setAge] = useState('')
 
     return (
         <section id="register" className="py-32 bg-zinc-50 dark:bg-transparent">
@@ -115,12 +116,16 @@ export default function ContactSection() {
                                         if (e.target.value) {
                                             const birthDate = new Date(e.target.value)
                                             const today = new Date()
-                                            const age = today.getFullYear() - birthDate.getFullYear()
+                                            const yearAge = today.getFullYear() - birthDate.getFullYear()
                                             const monthDiff = today.getMonth() - birthDate.getMonth()
                                             const actualAge = monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate()) 
-                                                ? age - 1 
-                                                : age
+                                                ? yearAge - 1 
+                                                : yearAge
+                                            setAge(actualAge.toString())
                                             setIsUnder18(actualAge < 18)
+                                        } else {
+                                            setAge('')
+                                            setIsUnder18(false)
                                         }
                                     }}
                                 />
@@ -147,8 +152,10 @@ export default function ContactSection() {
                                     type="number"
                                     id="age"
                                     name="age"
+                                    value={age}
                                     required
-                                    onChange={(e) => setIsUnder18(parseInt(e.target.value) < 18)}
+                                    readOnly
+                                    className="bg-muted cursor-not-allowed"
                                 />
                             </div>
 
