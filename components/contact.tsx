@@ -105,6 +105,45 @@ export default function ContactSection() {
 
                         <div className="grid md:grid-cols-2 gap-6">
                             <div className="space-y-3">
+                                <Label htmlFor="dateOfBirth">Date of Birth <span className="text-red-500">*</span></Label>
+                                <Input
+                                    type="date"
+                                    id="dateOfBirth"
+                                    name="dateOfBirth"
+                                    required
+                                    onChange={(e) => {
+                                        if (e.target.value) {
+                                            const birthDate = new Date(e.target.value)
+                                            const today = new Date()
+                                            const age = today.getFullYear() - birthDate.getFullYear()
+                                            const monthDiff = today.getMonth() - birthDate.getMonth()
+                                            const actualAge = monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate()) 
+                                                ? age - 1 
+                                                : age
+                                            setIsUnder18(actualAge < 18)
+                                        }
+                                    }}
+                                />
+                            </div>
+
+                            <div className="space-y-3">
+                                <Label htmlFor="gender">Gender <span className="text-red-500">*</span></Label>
+                                <Select name="gender" required>
+                                    <SelectTrigger>
+                                        <SelectValue placeholder="Select your gender" />
+                                    </SelectTrigger>
+                                    <SelectContent>
+                                        <SelectItem value="male">Male</SelectItem>
+                                        <SelectItem value="female">Female</SelectItem>
+                                        <SelectItem value="other">Other</SelectItem>
+                                        <SelectItem value="prefer-not-to-say">Prefer not to say</SelectItem>
+                                    </SelectContent>
+                                </Select>
+                            </div>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 gap-6">
+                            <div className="space-y-3">
                                 <Label htmlFor="age">Age <span className="text-red-500">*</span></Label>
                                 <Input
                                     type="number"
