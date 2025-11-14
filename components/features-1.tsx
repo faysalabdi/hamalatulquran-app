@@ -10,8 +10,8 @@ export default function Features() {
                     <h2 className="text-balance text-4xl font-semibold lg:text-5xl">Our Programs</h2>
                     <p className="mt-4 text-lg">Excellence in Quran education with dedicated teachers and structured programs</p>
                 </div>
-                <div className="mx-auto mt-8 grid max-w-sm gap-6 text-center md:mt-16 md:max-w-full md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-                    <Card className="group shadow-zinc-950/5 flex flex-col">
+                <div className="@min-4xl:max-w-full @min-4xl:grid-cols-5 mx-auto mt-8 grid max-w-sm gap-6 *:text-center md:mt-16 md:grid-cols-2 lg:grid-cols-3">
+                    <Card className="group shadow-zinc-950/5">
                         <CardHeader className="pb-3">
                             <CardDecorator>
                                 <Book
@@ -23,12 +23,12 @@ export default function Features() {
                             <h3 className="mt-6 font-medium">Hifdh (Memorization)</h3>
                         </CardHeader>
 
-                        <CardContent className="flex-1">
-                            <p className="mt-3 text-sm">Comprehensive memorization program with structured curriculum and regular assessments to help you memorize the Quran effectively.</p>
+                        <CardContent>
+                            <p className="text-sm">Comprehensive memorization program with structured curriculum and regular assessments to help you memorize the Quran effectively.</p>
                         </CardContent>
                     </Card>
 
-                    <Card className="group shadow-zinc-950/5 flex flex-col">
+                    <Card className="group shadow-zinc-950/5">
                         <CardHeader className="pb-3">
                             <CardDecorator>
                                 <Clock
@@ -40,12 +40,12 @@ export default function Features() {
                             <h3 className="mt-6 font-medium">Daily Revision</h3>
                         </CardHeader>
 
-                        <CardContent className="flex-1">
-                            <p className="mt-3 text-sm">6 days of online revision with dedicated teachers to maintain strong Hifdh and ensure long-term retention.</p>
+                        <CardContent>
+                            <p className="text-sm">6 days of online revision with dedicated teachers to maintain strong Hifdh and ensure long-term retention.</p>
                         </CardContent>
                     </Card>
 
-                    <Card className="group shadow-zinc-950/5 flex flex-col">
+                    <Card className="group shadow-zinc-950/5">
                         <CardHeader className="pb-3">
                             <CardDecorator>
                                 <BookOpen
@@ -57,12 +57,12 @@ export default function Features() {
                             <h3 className="mt-6 font-medium">Tajweed Excellence</h3>
                         </CardHeader>
 
-                        <CardContent className="flex-1">
-                            <p className="mt-3 text-sm">Master the art of proper Quranic recitation with our expert teachers. Beginner-friendly approach for all levels.</p>
+                        <CardContent>
+                            <p className="text-sm">Master the art of proper Quranic recitation with our expert teachers. Beginner-friendly approach for all levels.</p>
                         </CardContent>
                     </Card>
 
-                    <Card className="group shadow-zinc-950/5 flex flex-col">
+                    <Card className="group shadow-zinc-950/5">
                         <CardHeader className="pb-3">
                             <CardDecorator>
                                 <Users
@@ -74,12 +74,12 @@ export default function Features() {
                             <h3 className="mt-6 font-medium">All Levels Welcome</h3>
                         </CardHeader>
 
-                        <CardContent className="flex-1">
-                            <p className="mt-3 text-sm">From beginners to advanced students, we provide personalized attention and support for your Quranic journey.</p>
+                        <CardContent>
+                            <p className="text-sm">From beginners to advanced students, we provide personalized attention and support for your Quranic journey.</p>
                         </CardContent>
                     </Card>
 
-                    <Card className="group shadow-zinc-950/5 flex flex-col">
+                    <Card className="group shadow-zinc-950/5">
                         <CardHeader className="pb-3">
                             <CardDecorator>
                                 <GraduationCap
@@ -91,8 +91,8 @@ export default function Features() {
                             <h3 className="mt-6 font-medium">Pre-Hifdh Level (Boys)</h3>
                         </CardHeader>
 
-                        <CardContent className="flex-1">
-                            <p className="mt-3 text-sm">Designed for students who want to learn how to read the Quran correctly. This foundational program prepares students for Hifdh memorization with proper Tajweed and recitation skills.</p>
+                        <CardContent>
+                            <p className="text-sm">Designed for students who want to learn how to read the Quran correctly. This foundational program prepares students for Hifdh memorization with proper Tajweed and recitation skills.</p>
                         </CardContent>
                     </Card>
                 </div>
