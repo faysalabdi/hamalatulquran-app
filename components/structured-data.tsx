@@ -32,6 +32,11 @@ export default function StructuredData() {
         "teaches": [
           {
             "@type": "Course",
+            "name": "Pre-Hifdh Level (Boys)",
+            "description": "Designed for boys who want to learn how to read the Quran correctly. This foundational program prepares students for Hifdh memorization with proper Tajweed and recitation skills."
+          },
+          {
+            "@type": "Course",
             "name": "Hifdh (Quran Memorization)",
             "description": "Comprehensive memorization program with structured curriculum and regular assessments"
           },

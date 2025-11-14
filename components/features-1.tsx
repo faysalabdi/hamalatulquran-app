@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
-import { Book, BookOpen, Users, Clock } from 'lucide-react'
+import { Book, BookOpen, Users, Clock, GraduationCap } from 'lucide-react'
 import { ReactNode } from 'react'
 
 export default function Features() {
@@ -10,7 +10,7 @@ export default function Features() {
                     <h2 className="text-balance text-4xl font-semibold lg:text-5xl">Our Programs</h2>
                     <p className="mt-4 text-lg">Excellence in Quran education with dedicated teachers and structured programs</p>
                 </div>
-                <div className="@min-4xl:max-w-full @min-4xl:grid-cols-4 mx-auto mt-8 grid max-w-sm gap-6 *:text-center md:mt-16 md:grid-cols-2">
+                <div className="@min-4xl:max-w-full @min-4xl:grid-cols-5 mx-auto mt-8 grid max-w-sm gap-6 *:text-center md:mt-16 md:grid-cols-2 lg:grid-cols-3">
                     <Card className="group shadow-zinc-950/5">
                         <CardHeader className="pb-3">
                             <CardDecorator>
@@ -76,6 +76,23 @@ export default function Features() {
 
                         <CardContent>
                             <p className="mt-3 text-sm">From beginners to advanced students, we provide personalized attention and support for your Quranic journey.</p>
+                        </CardContent>
+                    </Card>
+
+                    <Card className="group shadow-zinc-950/5">
+                        <CardHeader className="pb-3">
+                            <CardDecorator>
+                                <GraduationCap
+                                    className="size-6"
+                                    aria-hidden
+                                />
+                            </CardDecorator>
+
+                            <h3 className="mt-6 font-medium">Pre-Hifdh Level (Boys)</h3>
+                        </CardHeader>
+
+                        <CardContent>
+                            <p className="mt-3 text-sm">Designed for boys who want to learn how to read the Quran correctly. This foundational program prepares students for Hifdh memorization with proper Tajweed and recitation skills.</p>
                         </CardContent>
                     </Card>
                 </div>
