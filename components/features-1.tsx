@@ -41,7 +41,7 @@ export default function Features() {
                         </CardHeader>
 
                         <CardContent>
-                            <p className="text-sm">6 days of online revision with dedicated teachers to maintain strong Hifdh and ensure long-term retention.</p>
+                            <p className="mt-3 text-sm">6 days of online revision with dedicated teachers to maintain strong Hifdh and ensure long-term retention.</p>
                         </CardContent>
                     </Card>
 
@@ -58,7 +58,7 @@ export default function Features() {
                         </CardHeader>
 
                         <CardContent>
-                            <p className="text-sm">Master the art of proper Quranic recitation with our expert teachers. Beginner-friendly approach for all levels.</p>
+                            <p className="mt-3 text-sm">Master the art of proper Quranic recitation with our expert teachers. Beginner-friendly approach for all levels.</p>
                         </CardContent>
                     </Card>
 
@@ -75,14 +75,13 @@ export default function Features() {
                         </CardHeader>
 
                         <CardContent>
-                            <p className="text-sm">From beginners to advanced students, we provide personalized attention and support for your Quranic journey.</p>
+                            <p className="mt-3 text-sm">From beginners to advanced students, we provide personalized attention and support for your Quranic journey.</p>
                         </CardContent>
                     </Card>
-
                     <Card className="group shadow-zinc-950/5">
                         <CardHeader className="pb-3">
                             <CardDecorator>
-                                <GraduationCap
+                            <GraduationCap
                                     className="size-6"
                                     aria-hidden
                                 />
@@ -92,9 +91,10 @@ export default function Features() {
                         </CardHeader>
 
                         <CardContent>
-                            <p className="text-sm">Designed for students who want to learn how to read the Quran correctly. This foundational program prepares students for Hifdh memorization with proper Tajweed and recitation skills.</p>
+                            <p className="mt-3 text-sm">FDesigned for students who want to learn how to read the Quran correctly. This foundational program prepares students for Hifdh memorization with proper Tajweed and recitation skills.</p>
                         </CardContent>
                     </Card>
+
                 </div>
             </div>
         </section>
