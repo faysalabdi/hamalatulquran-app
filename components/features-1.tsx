@@ -91,7 +91,7 @@ export default function Features() {
                         </CardHeader>
 
                         <CardContent>
-                            <p className="mt-3 text-sm">FDesigned for students who want to learn how to read the Quran correctly. This foundational program prepares students for Hifdh memorization with proper Tajweed and recitation skills.</p>
+                            <p className="mt-1 text-sm">Designed for students who want to learn how to read the Quran correctly. This foundational program prepares students for Hifdh memorization with proper Tajweed and recitation skills.</p>
                         </CardContent>
                     </Card>
 
