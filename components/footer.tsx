@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Mail, MapPin } from 'lucide-react'
+import { Mail, MapPin, Phone } from 'lucide-react'
 
 const links = [
     {
@@ -39,6 +39,24 @@ export default function FooterSection() {
                                 <a href="mailto:hamalatulquran.au@gmail.com" className="hover:text-primary">
                                     hamalatulquran.au@gmail.com
                                 </a>
+                            </div>
+                            <div className="flex items-start gap-2">
+                                <Phone className="size-4 mt-0.5 flex-shrink-0" />
+                                <span>
+                                    Ustadh Mustaf Sharif<br />
+                                    <a href="tel:+61481779010" className="hover:text-primary">
+                                        0481 779 010
+                                    </a>
+                                </span>
+                            </div>
+                            <div className="flex items-start gap-2">
+                                <Phone className="size-4 mt-0.5 flex-shrink-0" />
+                                <span>
+                                    Sheikh Abdallah<br />
+                                    <a href="tel:+61451164643" className="hover:text-primary">
+                                        +61 451 164 643
+                                    </a>
+                                </span>
                             </div>
                             <div className="flex items-start gap-2">
                                 <MapPin className="size-4 mt-0.5 flex-shrink-0" />
